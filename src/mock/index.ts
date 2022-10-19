@@ -16,7 +16,7 @@ export default {
                 text: '全网独播'
               },
               subtitle: null,
-              title: '<牧野诡事>摸金祖师战拘魂法王',
+              title: '<摸金祖师法王',
               img: '//liangcang-material.alicdn.com/prod/upload/830787353c084045881a3db599319cc7.jpg',
               summary: ''
             },
