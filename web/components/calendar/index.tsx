@@ -6,9 +6,7 @@ import { onlyCsr } from "ssr-hoc-react";
 import "react-calendar/dist/Calendar.css";
 import styles from "./index.module.less";
 
-type IType = {};
-
-const MyCalendar: IType = () => {
+const MyCalendar = () => {
   const [value, setVal] = useState(new Date());
 
   return (
