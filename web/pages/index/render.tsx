@@ -3,7 +3,7 @@ import { SProps, IContext } from "ssr-types";
 import { IData } from "~/typings/data";
 import { useStoreContext } from "ssr-common-utils";
 // import styles from "./index.less";
-import MyCalendar from "@/components/calendar";
+import MyCalendar from "@/components/calendar/index";
 import styles from "./index.module.less";
 
 export default function Index(props: SProps) {

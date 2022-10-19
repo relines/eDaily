@@ -8,7 +8,7 @@ import styles from "./index.module.less";
 
 type IType = {};
 
-const MyCalendar: any = (props: any) => {
+const MyCalendar: IType = () => {
   const [value, setVal] = useState(new Date());
 
   return (
