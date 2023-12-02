@@ -3,7 +3,10 @@ import { SProps, IContext } from "ssr-types";
 import { IData } from "~/typings/data";
 import { useStoreContext } from "ssr-common-utils";
 // import styles from "./index.less";
+
 import MyCalendar from "@/components/calendar/index";
+import MyList from "../list/index";
+
 import styles from "./index.module.less";
 
 export default function Index(props: SProps) {
@@ -11,11 +14,15 @@ export default function Index(props: SProps) {
   console.log(12, state);
   return (
     <div className={styles.container}>
-      <div className={`${styles.content} ${styles.left}`}>
+      <div className={`${styles.content} ${styles.calendarContainer}`}>
         <MyCalendar />
       </div>
-      <div className={`${styles.content} ${styles.middle}`}>123</div>
-      <div className={`${styles.content} ${styles.right}`}>123</div>
+      <div className={`${styles.content} ${styles.listContainer}`}>
+        <MyList />
+      </div>
+      <div className={`${styles.content} ${styles.detailContainer}`}>
+        detail
+      </div>
     </div>
   );
 }
