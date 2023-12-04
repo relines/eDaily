@@ -9,7 +9,7 @@
     "@midwayjs/core": "^3.0.0",
     "@midwayjs/decorator": "^3.0.0",
     "@midwayjs/koa": "^3.0.0",
-    "antd": "^4.23.6",
+    "antd": "^5.11.5",
     "electron": "^21.1.1",
     "koa-static-cache": "^5.1.4",
     "pm2": "^4.5.4",
