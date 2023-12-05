@@ -6,6 +6,7 @@ import { useStoreContext } from "ssr-common-utils";
 
 import MyCalendar from "@/components/calendar/index";
 import MyList from "../list/index";
+import MyEdit from "../edit/index";
 
 import styles from "./index.module.less";
 
@@ -20,8 +21,8 @@ export default function Index(props: SProps) {
       <div className={`${styles.content} ${styles.listContainer}`}>
         <MyList />
       </div>
-      <div className={`${styles.content} ${styles.detailContainer}`}>
-        detail
+      <div className={`${styles.content} ${styles.editContainer}`}>
+        <MyEdit />
       </div>
     </div>
   );
