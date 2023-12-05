@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import NoSSR from "react-no-ssr";
 // import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
@@ -13,11 +13,36 @@ type Iprops = {};
 export default function Index(props: Iprops) {
   const [value, setValue] = useState("");
 
+  const quillRef = useRef<any>();
+
   return (
     <div className={styles.container}>
-      1234
+      <div
+        onClick={() => {
+          console.log(3, value);
+        }}
+      >
+        getVal
+      </div>
       <NoSSR>
-        <ReactQuill theme="snow" value={value} onChange={setValue} />
+        <ReactQuill
+          theme="snow"
+          ref={quillRef}
+          value={value}
+          modules={
+            {
+              // toolbar: [[{ color: [] }, { background: [] }]],
+            }
+          }
+          style={{
+            width: "608px",
+            height: "160px",
+            resize: "none",
+            borderRadius: "5px",
+            marginBottom: "5px",
+          }}
+          onChange={setValue}
+        />
       </NoSSR>
     </div>
   );
